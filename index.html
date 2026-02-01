@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Jere & Scha</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="h-full font-serif bg-[#fef9f3]">
+
+<div id="flower-container"></div>
+
+<div id="app-wrapper" class="h-full w-full overflow-auto">
+
+<audio id="bg-music" loop>
+  <source src="audio/lagu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ================= COVER ================= -->
+<section
+  id="cover-section"
+  class="min-h-full min-h-screen flex items-center justify-center text-center px-6 relative bg-cover bg-center"
+  style="background-image: url(img/baground.jpeg);"
+>
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 max-w-lg">
+
+    <p class="tracking-[0.3em] uppercase text-sm mb-4 text-[#f5f1ea]">
+      The Wedding Of
+    </p>
+
+    <h1 class="font-script text-4xl md:text-5xl lg:text-6xl text-white">Jere</h1>
+    <div class="my-3 text-[#d4a574] text-xl">&amp;</div>
+    <h1 class="font-script text-4xl md:text-5xl lg:text-6xl text-white">Scha</h1>
+
+    <p class="mt-6 text-[#f5f1ea] tracking-wider">
+      Sabtu, 16 Agustus 2026
+    </p>
+
+    <button
+      id="open-invitation"
+      class="mt-10 px-10 py-3 border-2 border-[#d4a574]
+             text-white rounded-full
+             hover:bg-[#d4a574] hover:text-[#5c4934]
+             transition">
+      Buka Undangan
+    </button>
+
+  </div>
+</section>
+
+<section class="second-hero">
+  <div class="second-hero-overlay"></div>
+
+  <div class="second-hero-content">
+    <p class="hero-small font-serif">Save The Date</p>
+
+    <h1 class="hero-name font-script">
+      Jere & Scha
+    </h1>
+
+    <p class="hero-date font-serif">
+      16 Agustus 2026
+    </p>
+  </div>
+</section>
+
+<div id="invitation-content" class="hidden">
+
+<!-- AYAT -->
+<section class="scroll-section py-20 text-center max-w-3xl mx-auto px-6">
+  <p class="italic text-[#8b7355] leading-relaxed">
+    "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri,
+    supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."
+  </p>
+  <p class="mt-4 text-sm text-[#8b7355]">QS. Ar-Rum : 21</p>
+</section>
+
+<!-- PEMBUKA -->
+<section class="scroll-section py-12 text-center max-w-3xl mx-auto px-6">
+  <p class="tracking-widest text-xs text-[#8b7355] mb-4">BISMILLAHIRRAHMANIRRAHIM</p>
+  <p class="text-[#5c4934]">
+    Dengan memohon rahmat dan ridho Allah SWT, kami mengundang
+    Bapak/Ibu/Saudara/i untuk menghadiri pernikahan kami:
+  </p>
+</section>
+
+<!-- MEMPELAI -->
+<section class="scroll-section py-16">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 md:px-6">
+
+    <div class="border p-8 text-center bg-[#fffaf2] bride-card">
+      <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-[#d4a574]">
+        <img src="img/jere_mylove.jpg" class="w-full h-full object-cover bride-photo">
+      </div>
+      <h3 class="font-script text-2xl text-[#5c4934]">Jeremiah Fisher</h3>
+      <p class="text-sm text-[#8b7355] mt-2">Putra kedua dari</p>
+      <p class="text-[#8b7355]">Bapak Adam Fisher<br>Ibu Susannah Fisher</p>
+    </div>
+
+    <div class="border p-8 text-center bg-[#fffaf2] bride-card">
+      <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-[#d4a574]">
+        <img src="img/nisaa.jpeg" class="w-full h-full object-cover bride-photo">
+      </div>
+      <h3 class="font-script text-2xl text-[#5c4934]">Hoirun Nisa</h3>
+      <p class="text-sm text-[#8b7355] mt-2">Putri pertama dari</p>
+      <p class="text-[#8b7355]">Bapak Rahman<br>Ibu Rosma Marni</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WAKTU -->
+<section class="scroll-section py-20 bg-[#fdf6ed] text-center">
+  <h2 class="font-display text-3xl text-[#5c4934] mb-10">Waktu Acara</h2>
+
+  <div class="max-w-3xl mx-auto space-y-6 px-6">
+    <div class="border p-6 bg-white">
+      <h3 class="text-xl mb-2">Akad Nikah</h3>
+      <p>08.00 – 10.00 WIB</p>
+    </div>
+    <div class="border p-6 bg-white">
+      <h3 class="text-xl mb-2">Resepsi</h3>
+      <p>11.00 – 21.00 WIB</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOKASI -->
+<section class="scroll-section py-20 bg-[#fdf6ed] text-center px-6">
+  <h2 class="font-display text-3xl text-[#5c4934] mb-10">Lokasi Acara</h2>
+
+  <div class="max-w-3xl mx-auto">
+    <div class="border p-6 bg-white">
+      <h3 class="text-xl mb-2">Gedung SMKN 65 Jakarta</h3>
+      <p class="text-[#8b7355] mb-6">
+        Jl. IPN RT. 09 RW 06, Cipinang Besar Selatan,<br>
+        Kecamatan Jatinegara, Jakarta Timur
+      </p>
+
+      <iframe
+        class="w-full h-64 md:h-80 rounded border"
+        src="https://www.google.com/maps?q=SMKN+65+Jakarta&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AMPLOP + QR ================= -->
+<section class="scroll-section py-20 text-center px-6">
+  <h2 class="font-display text-3xl mb-6 text-[#5c4934]">Amplop Digital</h2>
+
+  <div class="max-w-md mx-auto border p-6 bg-white rounded-xl shadow">
+    <p class="font-semibold">BCA</p>
+    <p class="text-sm text-[#8b7355]">a.n. Jere & Scha</p>
+    <p class="tracking-widest">8012 0102 5090 538</p>
+
+    <div class="mt-6 text-center">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=BCA-801201025090538-Jere-Scha"
+        class="mx-auto border rounded-lg p-2 shadow">
+
+      <button onclick="copyToClipboard('801201025090538')"
+        class="mt-4 px-6 py-2 bg-[#d4a574] text-white rounded-full hover:scale-105 transition">
+        Copy Rekening
+      </button>
+
+      <div id="copy-toast"
+        class="opacity-0 mt-2 text-green-600 text-sm transition">
+        Nomor rekening disalin ✔
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SOUVENIR ================= -->
+<section class="scroll-section py-20 bg-[#fdf6ed] text-center px-6">
+  <h2 class="font-display text-3xl mb-8 text-[#5c4934]">
+    Souvenir Pernikahan
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+    <div class="souvenir-card">
+      <img src="img/parfume.jpeg" class="souvenir-img">
+      <p class="mt-3">Mini Parfum</p>
+    </div>
+
+    <div class="souvenir-card">
+      <img src="img/lilin.jpeg" class="souvenir-img">
+      <p class="mt-3">Lilin Aromaterapi</p>
+    </div>
+
+    <div class="souvenir-card">
+      <img src="img/cermin.jpeg" class="souvenir-img">
+      <p class="mt-3">Cermin</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= KONFIRMASI GOOGLE FORM ================= -->
+<section class="scroll-section py-20 bg-[#fdf6ed] text-center px-6">
+  <h2 class="font-display text-3xl mb-8 text-[#5c4934]">
+    Konfirmasi Kehadiran
+  </h2>
+
+  <p class="text-[#8b7355] mb-10 max-w-xl mx-auto">
+    Mohon kesediaan untuk mengisi konfirmasi kehadiran:
+  </p>
+
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSd7UXkuSdTFVAZYyHv9McwmGnuBoP5nTeDq7X1DEdYYLv6KGQ/viewform?usp=dialog"
+    target="_blank"
+    class="inline-block px-10 py-4 bg-[#d4a574] text-white rounded-full text-lg hover:scale-105 transition">
+    Isi Konfirmasi Kehadiran
+  </a>
+</section>
+
+<!-- PENUTUP -->
+<section class="scroll-section py-24 text-center bg-[#6b563e] text-white px-6">
+  <p>Merupakan kehormatan dan kebahagiaan bagi kami apabila berkenan hadir.</p>
+  <p class="mt-6">Wassalamu’alaikum Wr. Wb.</p>
+  <p class="mt-8 font-script text-2xl">Jeremiah Fisher & Hoirun Nisa</p>
+</section>
+
+</div>
+</div>
+
+<button id="music-toggle"
+class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#d4a574] text-white flex items-center justify-center shadow-lg">
+▶
+</button>
+
+<script src="script.js"></script>
+
+<script>
+function copyToClipboard(text){
+navigator.clipboard.writeText(text);
+const t=document.getElementById('copy-toast');
+if(t){
+t.classList.remove('opacity-0');
+setTimeout(()=>t.classList.add('opacity-0'),2000);
+}
+}
+</script>
+
+</body>
+</html>
